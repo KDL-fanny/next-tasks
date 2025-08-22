@@ -11,6 +11,7 @@ const getTask = async (id: string): Promise<TaskDocument> => {
   });
 
   const data = await response.json();
+  console.log(data);
   return data.task as TaskDocument;
 } 
 
