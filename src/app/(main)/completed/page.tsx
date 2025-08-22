@@ -28,5 +28,5 @@ const CompletedTaskPage = async () => {
     </div>
   );
 }
-
+///練習をやっています。
 export default CompletedTaskPage
