@@ -6,6 +6,7 @@ export const GET = async (_: NextRequest, {params} : {params: { id: string}}) =>
     try {
         await connectDb();
         const task = await TaskModel.findById(params.id);
+        console.log(task);
 
         if (!task){
             return NextResponse.json(
